@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-epoch-ai-models",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Epoch AI — AI models database",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-76387cf2d359a0c83072627adf10c9ad4540909db49756cf20b6e0fc45828490",
-    "sourceCommit": "4f465027cf3de54acf4976d8118ae3423a8ec9fa"
+    "sourceHash": "v1-daf47aef697a9ab41c598c9cc3bbe83bf9ded6026286c1753d3163c5524d0af4",
+    "sourceCommit": "712a5e0171ea24483214329d0cd7efdfd9b80352"
   }
 }
