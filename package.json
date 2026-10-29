@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-epoch-ai-models",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Epoch AI — AI models database",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-epoch-ai-models": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "epoch-ai-models"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-epoch-ai-models.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/epoch-ai-models",
   "pipeworx": {
-    "sourceHash": "v1-2bcf8e38431891d700899c9f444e1d2fec7df3106575246c1323a1aed3f5cdea",
-    "sourceCommit": "722087a9bda73f85942e8f6bbfd598544cb0d490"
+    "mode": "gateway",
+    "slug": "epoch-ai-models",
+    "gatewaySlug": "epoch-ai-models",
+    "sourceHash": "v1-28f27a083807462fb8016e85472036e385b745370b31f549a8d68e23661dc7d5",
+    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
   }
 }
